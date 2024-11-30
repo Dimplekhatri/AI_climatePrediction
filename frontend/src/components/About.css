@@ -1,0 +1,70 @@
+.about-page {
+    background: linear-gradient(to bottom, #87ceeb, #f0f8ff); /* Sky blue to light cyan */
+    padding: 3rem 2rem;
+    color: #333;
+    text-align: center;
+    border-top: 3px solid #4a90e2; /* Accent border resembling rain */
+    border-bottom: 3px solid #4a90e2; /* Consistent theme */
+    font-family: 'Arial', sans-serif;
+}
+
+.about-page h2 {
+    font-size: 2.5rem;
+    color: #004080; /* Deep blue for contrast */
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.about-page p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+    color: #2c3e50; /* Darker gray-blue for readability */
+}
+
+.about-page .content-container {
+    padding: 1rem;
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for dimension */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .about-page {
+        padding: 2rem 1rem;
+    }
+
+    .about-page h2 {
+        font-size: 2rem;
+    }
+
+    .about-page p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-page {
+        padding: 1.5rem 1rem;
+    }
+
+    .about-page h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-page p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-page h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-page p {
+        font-size: 0.8rem;
+    }
+}

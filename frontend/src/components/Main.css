@@ -1,0 +1,189 @@
+/* Main.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #042e52, #4e8386); /* Gradient sky blue to cyan */
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.home-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #708090; /* Rain gray for the header */
+  color: #f0f8ff;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.home-header nav a {
+  margin: 0 1rem;
+  color: #f0f8ff; /* Cloud white for links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.home-header nav a:hover {
+  color: #FFD700; /* Sunshine yellow on hover */
+}
+
+
+h1 {
+  text-align: center;
+  color: #003366; /* Dark navy blue */
+  margin-bottom: 20px;
+  font-size: 3.5em;
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  animation: glow 2s infinite alternate;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.2); /* Glassmorphism effect */
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+input {
+  border: 2px solid #003366; /* Dark navy blue */
+  border-radius: 10px;
+  font-size: 1.1em;
+  padding: 14px;
+  width: 100%;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.6); /* Subtle glassy background */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  outline: none;
+  border-color: #FF4500; /* Vibrant coral */
+  box-shadow: 0px 0px 15px rgba(255, 69, 0, 0.7); /* Coral glow */
+  transform: scale(1.03);
+}
+
+button {
+  background: linear-gradient(to right, #003366, #4facfe); /* Gradient button */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1em;
+  padding: 14px 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(to right, #261a16, #6675a0); /* Bright coral gradient */
+  transform: scale(1.15);
+  box-shadow: 0px 8px 20px rgba(9, 33, 154, 0.5);
+}
+
+p {
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-top: 25px;
+  animation: fadeIn 1s ease-in-out;
+  font-weight: bold;
+}
+
+p strong {
+  color: #003366; /* Dark navy blue */
+}
+
+p.error {
+  color: #D32F2F; /* Red for error messages */
+  font-weight: bold;
+  background: rgba(255, 0, 0, 0.1); /* Light red background */
+  padding: 12px;
+  border-radius: 10px;
+  animation: shake 0.5s ease-in-out;
+}
+
+p.prediction {
+  color: #004d40; /* Teal for prediction messages */
+  background: rgba(255, 255, 255, 0.7); /* Glassy white */
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+  animation: pulse 1.5s infinite;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 0 0 15px #4facfe, 0 0 20px #00f2fe;
+  }
+  to {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 0 0 20px #87ceeb, 0 0 25px #4facfe;
+  }
+}
+
+@media (max-width: 768px) {
+  input {
+    width: 90%;
+  }
+
+  button {
+    width: 90%;
+    margin-top: 15px;
+  }
+}

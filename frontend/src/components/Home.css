@@ -1,0 +1,292 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #f0f8ff; /* Cloud white for text */
+    background: #1c1c2e; /* Storm navy for the background */
+}
+
+.home {
+    text-align: center;
+}
+
+/* Header Styles */
+.home-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #708090; /* Rain gray for the header */
+    color: #f0f8ff;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.home-header nav a {
+    margin: 0 1rem;
+    color: #f0f8ff; /* Cloud white for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.home-header nav a:hover {
+    color: #FFD700; /* Sunshine yellow on hover */
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #FFD700; /* Sunshine yellow for logo */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f0f8ff; /* Cloud white for text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    background: url('../images/A\ vibrant\,\ bright\,\ colorful\,\ intense\ lightning\ and\ electrical\ storm\ in\ the\ sky.jpeg.url') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the section */
+    background-color: #1c1c2e; /* Fallback for transparency or missing parts */
+    background-position: center center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #FFD700; /* Sunshine yellow for headings */
+}
+
+.hero-content .cta-btn {
+    background: #708090; /* Rain gray for button */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    color: #f0f8ff; /* Cloud white for text */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero-content .cta-btn:hover {
+    background: #FFD700; /* Sunshine yellow on hover */
+    color: #1c1c2e; /* Storm navy for text on hover */
+}
+
+/* About Page */
+.about-page {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('../images/download\ \(1\).jpeg.url') no-repeat center center / cover;
+    color: #f0f8ff; /* Cloud white for text */
+    padding: 2rem;
+}
+
+.about-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(135, 206, 235, 0.4); /* Sky blue overlay */
+    z-index: 1;
+}
+
+.about-page .content-container {
+    position: relative;
+    background: rgba(0, 0, 0, 0.8); /* Black block with transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    max-width: 800px;
+    z-index: 2;
+}
+
+.about-page h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: #FFD700; /* Sunshine yellow for headings */
+}
+
+.about-page p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+    color: #f0f8ff; /* Cloud white for text */
+}
+
+/* Section Styles */
+.about, .features, .services, .footer {
+    padding: 2rem 1rem;
+}
+
+/* Shared Styles */
+.features, .services, .footer {
+    background: #1c1c2e; /* Storm navy for section backgrounds */
+    color: #f0f8ff; /* Cloud white for text */
+}
+
+.features h2, .services h2, .footer h2 {
+    color: #FFD700; /* Sunshine yellow for headings */
+}
+
+.features p, .services p, .footer p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #f0f8ff;
+}
+
+.footer {
+    text-align: center;
+    background: linear-gradient(135deg, #1c1c2e, #708090); /* Storm navy to rain gray */
+}
+
+.footer p a {
+    color: #FFD700; /* Sunshine yellow for links */
+    text-decoration: none;
+}
+
+.footer p a:hover {
+    color: #f0f8ff; /* Cloud white on hover */
+}
+
+section {
+    padding: 3rem 1.5rem;
+    color: #f0f8ff; /* Cloud white for text */
+    text-align: center;
+}
+
+section h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #FFD700; /* Sunshine yellow for headings */
+    letter-spacing: 1px;
+}
+
+/* Features Section */
+.features {
+    background: linear-gradient(135deg, #87CEEB, #1c1c2e); /* Sky blue to storm navy gradient */
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background: #708090; /* Rain gray for cards */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #f0f8ff;
+}
+
+.feature-card h4 {
+    font-size: 1.5rem;
+    color: #FFD700; /* Sunshine yellow for titles */
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #f0f8ff; /* Cloud white for text */
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    background: #706839; /* Sunshine yellow on hover */
+    color: #06063a; /* Storm navy for text on hover */
+}
+
+/* Services Section */
+.services {
+    background: #1c1c2e; /* Storm navy for section background */
+}
+
+.services p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #f0f8ff; /* Cloud white for paragraph text */
+}
+
+.services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services ul li {
+    margin: 0.75rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.5rem 1rem;
+    background: #708090; /* Rain gray for list items */
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+    color: #f0f8ff;
+}
+
+.services ul li:hover {
+    background: #FFD700; /* Sunshine yellow on hover */
+    color: #1c1c2e; /* Storm navy for text on hover */
+}
+
+/* Footer Section */
+.footer {
+    background: linear-gradient(135deg, #1c1c2e, #708090); /* Storm navy to rain gray gradient */
+    color: #f0f8ff; /* Cloud white for text */
+    padding: 2rem 1.5rem;
+}
+
+.footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #FFD700; /* Sunshine yellow for heading */
+}
+
+.footer p {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+
+.footer p a {
+    color: #FFD700; /* Sunshine yellow for links */
+    text-decoration: none;
+}
+
+.footer p a:hover {
+    color: #f0f8ff; /* Cloud white on hover */
+}

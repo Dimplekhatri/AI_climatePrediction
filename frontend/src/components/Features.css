@@ -1,0 +1,94 @@
+.features {
+    background: linear-gradient(to bottom, #f0f8ff, #87ceeb); /* Light cyan to sky blue */
+    padding: 3rem 2rem;
+    color: #333;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.features h3 {
+    font-size: 2.5rem;
+    color: #004080; /* Deep blue for headline */
+    margin-bottom: 2rem;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.feature-card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.feature-card h4 {
+    font-size: 1.5rem;
+    color: #004080; /* Deep blue for card titles */
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #2c3e50; /* Darker gray-blue for readability */
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .features h3 {
+        font-size: 2rem;
+    }
+
+    .feature-card h4 {
+        font-size: 1.3rem;
+    }
+
+    .feature-card p {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .features {
+        padding: 2rem 1rem;
+    }
+
+    .features h3 {
+        font-size: 1.8rem;
+    }
+
+    .feature-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .feature-card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .features h3 {
+        font-size: 1.5rem;
+    }
+
+    .feature-card h4 {
+        font-size: 1rem;
+    }
+
+    .feature-card p {
+        font-size: 0.85rem;
+    }
+}

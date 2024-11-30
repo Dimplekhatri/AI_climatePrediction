@@ -1,0 +1,92 @@
+.services {
+    background: linear-gradient(to bottom, #87cefa, #ffffff); /* Sky blue to white gradient */
+    padding: 3rem 2rem;
+    color: #333;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.services h3 {
+    font-size: 2.5rem;
+    color: #004080; /* Deep blue for the headline */
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.services p {
+    font-size: 1.2rem;
+    color: #2c3e50; /* Gray-blue for readability */
+    margin-bottom: 1rem;
+}
+
+.services ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Align items to the left */
+    display: inline-block; /* Center the list */
+}
+
+.services ul li {
+    font-size: 1.1rem;
+    color: #2c3e50; /* Gray-blue */
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.services ul li:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .services h3 {
+        font-size: 2rem;
+    }
+
+    .services p {
+        font-size: 1rem;
+    }
+
+    .services ul li {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        padding: 2rem 1rem;
+    }
+
+    .services h3 {
+        font-size: 1.8rem;
+    }
+
+    .services p {
+        font-size: 0.95rem;
+    }
+
+    .services ul li {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services h3 {
+        font-size: 1.5rem;
+    }
+
+    .services p {
+        font-size: 0.85rem;
+    }
+
+    .services ul li {
+        font-size: 0.85rem;
+    }
+}
