@@ -1,5 +1,3 @@
-Got it! Here's the updated README file reflecting the use of ReactJS for the frontend and Node.js with Express for the backend:
-
 ---
 
 # AI Climate Prediction
